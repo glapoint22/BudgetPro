@@ -1,0 +1,30 @@
+@import 'utility';
+
+.sub-section{
+    height: 40px;
+    .chart-icon{
+        background: $bar-color; 
+        height: 30px; 
+        width: 30px; 
+        margin: 4px;
+        border: 1px solid $border-color;
+        text-align: center;
+        font-size: 25px;
+        color: #C1C1C1;
+        position: relative;
+        top: 5px;
+    }
+}
+button{
+    font-size: 16px;
+    float: right; 
+    position: relative; 
+    top: 7px; 
+    margin-right: 5px;
+}
+input[type="text"]{
+    height: 20px;
+    float: right; 
+    position:relative; 
+    top: 7px;
+}

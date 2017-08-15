@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'utility';
+
+input[type="text"]{
+    background: $background-color; 
+    border: 1px solid $border-color;
+    outline-color: $highlight-color;
+    color: #BBBBBB;
+    font-size: 16px;
+}
+
+button{
+    color: #464646;
+    background: #838383;
+    outline-color: $highlight-color;
+}
