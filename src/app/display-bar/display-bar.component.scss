@@ -10,9 +10,10 @@
         border: 1px solid $border-color;
         text-align: center;
         font-size: 25px;
-        color: #C1C1C1;
+        color: #D8D8D8;
         position: relative;
         top: 5px;
+        -webkit-text-stroke: 1px black;
     }
 }
 button{

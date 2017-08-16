@@ -2,7 +2,6 @@
 
 .envelopes-container{
     border-top: 1px solid $border-color;
-    flex: 1;
     overflow-y: auto;
     .envelopes-row{
         height: 22px;
@@ -16,4 +15,37 @@
         background-color: $hover-color;
         cursor: pointer;
     }
+}
+.fa-envelope{
+    font-size: 18px;
+    padding-top: 2px;
+}
+.envelope-button{
+    position: relative;
+    top: 5px;
+    float: right; 
+    padding: 0 8px 0 8px;
+}
+.fa-times{
+    position:absolute;
+    right: 18px;
+    top: 4px;
+    color: $red;
+    font-size: 20px;
+    -webkit-text-stroke: 1px #000000;
+}
+.circle{
+    width: 16px;
+    height: 16px;
+    background: $green;
+    border-radius: 8px;
+    position:absolute;
+    right: 54px;
+    top: 5px;
+    border: 1px solid #242424;
+}
+.fa-plus{
+    top: -6px;
+    position:relative;
+    -webkit-text-stroke: 1px #000000;
 }
