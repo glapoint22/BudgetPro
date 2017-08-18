@@ -23,7 +23,6 @@
             display: flex;
             flex-direction:column;
         }
-        
         .left-panel, .center-panel, .right-panel{
             border: 1px solid $border-color;
             display: flex;
@@ -34,6 +33,75 @@
         }
         .center-panel{
             flex: 4.76;
+            table{
+                border-collapse: collapse;
+                thead{
+                    display: block;
+                    background: $header-color;
+                    th{
+                        border-top: 2px solid $container-color;
+                        border-left: 1px solid $container-color;
+                        height: 38px;
+                    }
+                    th:first-child{
+                        border-left: 2px solid $container-color;
+                    }
+                    th:last-child{
+                        border-right: 2px solid $container-color;
+                        width: 127px;
+                    }
+                }
+                th,td{
+                    text-align: left;
+                    padding-left: 5px;
+                }
+                tbody:before {
+                    content:"";
+                    display:block;
+                    margin-top: 2px;
+                }
+                tbody{
+                    height: 773px;
+                    overflow: auto;
+                    display: block;
+                    tr{
+                        border-top: 1px solid $border-color;
+                        border-bottom: 1px solid $border-color;
+                    }
+                    tr:nth-child(odd){
+                        background-color: #403f3f;
+                    }
+                }
+                td{
+                    font-size: 14px;
+                    height: 32px;
+                    color: #DCDCDC;
+                }
+                td:not(:first-child){
+                    border-left: 1px solid $border-color;
+                }
+                td:nth-child(1){
+                    min-width: 80px;
+                }
+                td:nth-child(2){
+                    color: $green;
+                    min-width: 90px;
+                }
+                td:nth-child(3){
+                    color: $red;
+                    min-width: 100px;
+                }
+                td:nth-child(4){
+                    color: $blue;
+                    min-width: 100px;
+                }
+                td:nth-child(5){
+                    min-width: 580px;
+                }
+                td:nth-child(6){
+                    min-width: 114px;
+                }
+            }
         }
         .right-panel{
             flex: 1.29;
@@ -57,8 +125,8 @@
     font-size: 12px; 
     color: $green;
 }
-.title-bar{
-    background-color: $bar-color;
+.header{
+    background-color: $header-color;
     position: relative;
     height: 30px;
     top: 0;
