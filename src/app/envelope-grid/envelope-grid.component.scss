@@ -1,0 +1,26 @@
+@import 'utility';
+
+
+    
+    
+td:nth-child(1){
+    min-width: 80px;
+}
+td:nth-child(2){
+    color: $green;
+    min-width: 90px;
+}
+td:nth-child(3){
+    color: $red;
+    min-width: 100px;
+}
+td:nth-child(4){
+    color: $blue;
+    min-width: 100px;
+}
+td:nth-child(5){
+    min-width: 508px;
+}
+td:nth-child(6){
+    min-width: 114px;
+}

@@ -6,6 +6,8 @@ import { BudgetComponent } from './budget/budget.component';
 import { AccountComponent } from './account/account.component';
 import { EnvelopesComponent } from './envelopes/envelopes.component';
 import { DisplayBarComponent } from './display-bar/display-bar.component';
+import { EnvelopeGridComponent } from './envelope-grid/envelope-grid.component';
+import { AccountGridComponent } from './account-grid/account-grid.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { DisplayBarComponent } from './display-bar/display-bar.component';
     BudgetComponent,
     AccountComponent,
     EnvelopesComponent,
-    DisplayBarComponent
+    DisplayBarComponent,
+    EnvelopeGridComponent,
+    AccountGridComponent
   ],
   imports: [
     BrowserModule
